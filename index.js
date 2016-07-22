@@ -1,10 +1,11 @@
-var express = require('express')
-var app = express()
+var express = require('express');
+var logger = require('morgan');
+var app = express();
+var path = require('path');
 
-app.get('/', function (req , res) {
-  res.send('Hello world!')
-})
+app.use(logger('dev'));
+app.use(express.static('public'));
 
-var server = app.listen(3000, function() {
-  console.log('Server running at http://localhost:' + server.address().port)
-})
+app.listen(process.env.PORT || 3000, function () {
+  console.log('Listening on http://localhost:' + (process.env.PORT || 3000))
+});
