@@ -1,8 +1,5 @@
-.right-container {
-  width: 30%;
-}
 
-.twitter-timeline{
-  display: none;
+.col-md-9 {
+  width: 60%;
   float: left;
 }

@@ -9,22 +9,19 @@
 <body>
   <div>
     <header>
-      <h1>InstaTweet</h1>
+      <h1>InstaFeed</h1>
     </header>
-    <div class="left-container">
-      <div class="twitter-tweets">
-        <a class="twitter-timeline" href="https://twitter.com/myrainydays">Tweets by myrainydays
-        </a>
-        <script async src="//platform.twitter.com/widgets.js" charset="utf-8">
-        </script>
-      </div>
-    </div>
-    <div class="right-container">
-      <div id="content">
 
       </div>
-    </div>
+      <div class="col-md-9">
+        <div id="content">
+
+        </div>
+      </div>
+
+
   </div>
+  <script src="/scripts/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://api.instagram.com/v1/users/self/media/recent/?access_token=3256527.1677ed0.cdbc6ce2681742fab477b432f0f333ac&callback=showEvents"></script>
 </body>

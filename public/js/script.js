@@ -26,7 +26,7 @@ function showEvents (data) {
     newContent += '<p><b>' + data.data[i].caption.text + '</b></br>';
     newContent += '</div>';
   }
-//update page with content
+//update page with new content
 document.getElementById('content').innerHTML = newContent;
 }
 
